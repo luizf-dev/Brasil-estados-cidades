@@ -1,0 +1,169 @@
+body{
+    background-color: #00000090;
+}
+
+.resultado{
+    margin-left: 60px;
+    text-shadow: 2px 1px 1px #000;
+    font-weight: 900;
+}
+
+
+/* ! Barra de Navegação ================*/
+nav.navbar-transparent{
+    background: rgba(0,0,0,0.6);    
+}
+
+.navbar-light .nav-item .nav-link{
+    color: #fff;
+    font-weight: 900;
+    font-size: 1.3em;
+}
+
+.navbar-light .nav-item .nav-link:hover{
+    color: green;
+}
+
+.navbar-light .navbar-toggler{
+    color: rgba(0,0,0,0.5);
+    border-color: white;
+}
+/*! ================================== */
+
+/* ! input search inicio ==============*/ 
+.search{
+    width: 100%;
+    margin-bottom: 80px;   
+}
+
+.input-field{
+    height: 40px;
+    width: 48%;
+    margin-left: 65px;
+    float: left;
+    outline-style: none;
+    border-style: none;
+    font-size: 1.4em;
+    color: #000;
+    font-weight: 900;
+    border: 1px solid #000;
+    padding-left: 20px;
+}
+
+.input-field:focus{
+    border: 1px solid #000;
+    box-shadow: 0 0 3px #000;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+/* ! input search fim ======================*/
+
+
+/* ! ===============TABELA INICIO ==========*/
+.table-container{
+    padding: 10% 5%;
+    margin: 0 auto;
+    
+}
+
+.table{
+    width: 90%;
+    margin: 0 auto;
+    border-collapse:collapse;
+    box-shadow: 5px 3px 3px #000;
+}
+
+.table thead tr th{
+    font-size: 1.2em;
+    font-weight: 900;
+    letter-spacing: 0.35px;
+    color: #ffffff;
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+    text-shadow: 2px 2px 2px #000;
+	text-align: center;
+    border: 1px solid #000;
+}
+
+.table tbody tr td{
+    font-size: 1em;
+    letter-spacing: 0.35px;
+    font-weight: 900;
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+	line-height: 25px;
+    text-align: center;
+    border: 1px solid #000;
+}
+/* ! ============TABELA FIM==========================*/
+
+
+
+
+/* ?==========MEDIA QUERIES======================*/
+@media (max-width: 768px) {
+
+	/* ! ===TABELA RESPONSIVA INICIO===*/
+
+    .table-container{
+        padding: 10% 5%;
+        margin: 50px auto;
+    }
+
+    .table{
+        width: 100%;
+        margin: 100px auto;
+        border-collapse:collapse;
+        box-shadow: 5px 3px 3px #000;
+    }
+
+    .table thead{
+        display: none;
+    }
+
+    .table, .table tbody, .table tr, .table td{
+        display: block;
+        width: 100%
+    }
+
+    .table tr{
+        margin-bottom: 15px;
+    }
+    
+    .table tbody tr td{
+        text-align: right;
+        padding-left: 5%;
+        position: relative;
+        font-size: 0.9em;
+        font-weight: 700;
+        color: #000;
+    }
+
+    .table td:before{
+        content: attr(data-label);
+        position: absolute;
+        left: 1px;
+        width: 50%;
+        padding-left: 5px;
+        font-weight: 900;
+        font-size: 1.3em;
+        text-align: left;
+        color: #000;
+    }
+	/* ! ====TABELA RESPONSIVA FIM=====*/	
+}
+
+
+
+
+@media (max-width: 913px){
+
+    .search, .input-field{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
